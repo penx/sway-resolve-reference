@@ -4,7 +4,9 @@
   "description": "Illustrating an issue with sway",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "curl -d \"@test.json\" -H \"Content-Type: application/json\" -X POST http://127.0.0.1:10010/test",
+    "start": "openapi-mock ./spec.json",
+    "debug": "DEBUG=* node --inspect ./node_modules/.bin/openapi-mock ./spec.json"
   },
   "repository": {
     "type": "git",
@@ -15,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/penx/sway-resolve-reference/issues"
   },
-  "homepage": "https://github.com/penx/sway-resolve-reference#readme"
+  "homepage": "https://github.com/penx/sway-resolve-reference#readme",
+  "dependencies": {
+    "openapi-mock": "0.0.4"
+  }
 }
