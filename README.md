@@ -19,7 +19,7 @@ Then, with the mock server running:
 npm test
 ```
 
-Uses openapi-mock, that uses a GitHub fork of swagger-node-runner, that uses a GitHub fork of sway, which uses json-refs@3.0.4.
+Uses openapi-mock, that uses a GitHub fork of [swagger-node-runner](https://github.com/penx/swagger-node-runner/tree/feature/support-date-in-mocks), that uses a [GitHub fork of Sway](https://github.com/penx/sway/tree/feature/date-format-in-mocks), which uses json-refs@3.0.4.
 
 ```
 sway-resolve-reference@0.0.1
