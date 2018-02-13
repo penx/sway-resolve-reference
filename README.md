@@ -22,7 +22,7 @@ npm test
 Uses openapi-mock, that uses a GitHub fork of swagger-node-runner, that uses a GitHub fork of sway, which uses json-refs@3.0.4.
 
 ```
-sway-resolve-reference@0.0.1 /Users/penx/Development/personal/sway-resolve-reference
+sway-resolve-reference@0.0.1
 └─┬ openapi-mock@0.0.4
   └─┬ swagger-node-runner@0.7.3 (github:penx/swagger-node-runner#b73eb1c5c7bbdae207957692f0f9d8379ba84866)
     └─┬ sway@1.0.0 (github:penx/sway#8ebcbf84dcaf7ab38ed6830e43cd3f36b6912aec)
