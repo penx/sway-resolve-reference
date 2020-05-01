@@ -6,7 +6,9 @@
   "scripts": {
     "test": "curl -d \"@test.json\" -H \"Content-Type: application/json\" -X POST http://127.0.0.1:10010/test",
     "start": "openapi-mock ./spec.json",
-    "debug": "DEBUG=* node --inspect ./node_modules/.bin/openapi-mock ./spec.json"
+    "debug": "DEBUG=* node --inspect ./node_modules/.bin/openapi-mock ./spec.json",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -19,6 +21,8 @@
   },
   "homepage": "https://github.com/penx/sway-resolve-reference#readme",
   "dependencies": {
-    "openapi-mock": "0.0.4"
-  }
+    "openapi-mock": "0.0.4",
+    "snyk": "^1.316.1"
+  },
+  "snyk": true
 }
